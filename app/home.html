@@ -11,6 +11,8 @@
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <!-- build:css(.) styles/vendor.css -->
     <!-- bower:css -->
+    <link rel="stylesheet" href="/bower_components/slick-carousel/slick/slick.css" />
+    <link rel="stylesheet" href="/bower_components/slick-carousel/slick/slick-theme.css" />
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
@@ -22,14 +24,74 @@
 </head>
 
 <body class="page-home">
-    <header>
-    	<div class="container">
-    		
-    	</div>
-    </header>
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <div class="brand hidden-lg text-center">
+                    <a href="#"><img src="images/logo.png" height="34" width="45" alt=""></a>
+                </div>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">首页<span class="sr-only">(current)</span></a></li>
+                    <li><a href="#">服务介绍</a></li>
+                    <li><a href="#">门店详情</a></li>
+                    <li><a href="#">企业活动</a></li>
+                    <li class="logo visible-lg">
+                        <a href="#"><img src="images/logo.png" height="68" width="89" alt=""></a>
+                    </li>
+                    <li><a href="#">会员中心</a></li>
+                    <li><a href="#">作品展示</a></li>
+                    <li><a href="#">招聘信息</a></li>
+                    <li><a href="#">关于我们</a></li>
+                    <li><a href="#">烘培助手</a></li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+    <section class="banner banner-home">
+        <div class="container">
+            <div class="banner-slick" data-slick='{"slidesToShow": 1, "slidesToScroll": 1}'>
+                <div>
+                    <a href="#"><img class="img-responsive" src="images/j01.jpg" alt=""></a>
+                </div>
+                <div>
+                    <a href="#"><img class="img-responsive" src="images/j02.jpg" alt=""></a>
+                </div>
+                <div>
+                    <a href="#"><img class="img-responsive" src="images/j01.jpg" alt=""></a>
+                </div>
+                <div>
+                    <a href="#"><img class="img-responsive" src="images/j02.jpg" alt=""></a>
+                </div>
+            </div>
+        </div>
+        <div class="banner-nav">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-3">
+                    </div>
+                    <div class="col-xs-3"></div>
+                    <div class="col-xs-3"></div>
+                    <div class="col-xs-3"></div>
+                </div>
+            </div>
+        </div>
+    </section>
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->
     <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <script src="/bower_components/slick-carousel/slick/slick.min.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:js(.) scripts/plugins.js -->
@@ -49,6 +111,18 @@
     <!-- build:js scripts/main.js -->
     <script src="scripts/main.js"></script>
     <!-- endbuild -->
+    <script>
+    (function($) {
+        $(document).ready(function() {
+            $('.banner-slick').slick({
+                autoplay: true,
+                dots: true,
+                arrows: false,
+                speed: 2000
+            });
+        });
+    })(jQuery);
+    </script>
 </body>
 
 </html>

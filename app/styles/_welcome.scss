@@ -1,0 +1,68 @@
+//欢迎页样式
+.page-welcome {
+    background: url(../images/hyjm_bg.jpg) top center;
+    height: 100%;
+    overflow: hidden;
+    .center-container {
+        .center-table {
+            .center-cell {
+                .center-block {
+                    background: url(../images/hyjm_1.jpg) no-repeat center center;
+                    background-size: auto 100%;
+                    width: 90%;
+                    height: 90%;
+                    position: relative;
+                    @media (min-width: $screen-phone) {
+                        width: 80%;
+                        height: 80%;
+                    }
+                    @media (min-width: $screen-tablet) {
+                        width: 70%;
+                        height: 70%;
+                    }
+                    @media (min-width: $screen-desktop) {
+                        width: 60%;
+                        height: 70%;
+                    }
+                    @media (min-width: $screen-lg-desktop) {
+                        width: 50%;
+                        height: 60%;
+                    }
+                    img {
+                        position: relative;
+                        display: block;
+                        margin: 0 auto;
+                        top: 10%;
+                        @media (min-width: $screen-phone) {
+                            top: 15%;
+                        }
+                        @media (min-width: $screen-tablet) {
+                            top: 20%;
+                        }
+                    }
+                    .btn-wrap {
+                        text-align: center;
+                        .btn-welcome {
+                            .iconfont {
+                                font-size: 20px;
+                                font-weight: normal;
+                                margin-right: 10px;
+                            }
+                            margin: 0 auto;
+                            font-size: 20px;
+                            font-weight: bold;
+                            position: absolute;
+                            left: 50%;
+                            margin-left: -116px;
+                            bottom: 15px;
+                            @media (min-width: $screen-phone) {
+                                left: auto;
+                                right: 15px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

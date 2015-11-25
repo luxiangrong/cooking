@@ -1,0 +1,8 @@
+//欢迎按钮
+.btn-welcome {
+    @include button-variant(#fff, #fc7502, #ffffff);
+    border-width: 3px;
+    border-radius: 5px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
