@@ -1,0 +1,164 @@
+.banner {
+    &.banner-home {
+        background: url(../images/bg.jpg) repeat-x left top;
+        .container {
+            position: relative;
+        }
+        .slick-slider {
+            margin-bottom: 0;
+        }
+        .slick-dots {
+            bottom: 0px;
+            li {
+                button {
+                    &:before {
+                        color: #ffffff;
+                        @include opacity(1);
+                        font-size: 12px;
+                    }
+                }
+                &:hover {
+                    button {
+                        &:before {
+                            color: lighten(#ff607e, 20%);
+                        }
+                    }
+                }
+                &.slick-active {
+                    button {
+                        &:before {
+                            color: #ff607e;
+                        }
+                    }
+                }
+            }
+        }
+        .banner-menu {
+            position: absolute;
+            top: 0;
+            right: 0;
+            height: 100%;
+            width: 35%;
+            @media (min-width: $grid-float-breakpoint) {
+                width: 28%;
+            }
+            margin: 0;
+            li {
+                list-style: none;
+                height: 20%;
+                @media (min-width: $grid-float-breakpoint) {
+                    height: 12.5%;
+                }
+                background: url(../images/rk_bg.png) repeat-y right top;
+                text-align: center;
+                border-bottom: 1px solid #ddd;
+                a {
+                    vertical-align: middle;
+                    text-decoration: none;
+                    color: #666666;
+                    img {
+                        margin-right: 10px;
+                    }
+                    &:hover {
+                        color: #fc8ea0;
+                    }
+                }
+                &.img-menu {
+                    @media (min-width: $grid-float-breakpoint) {
+                        height: 25%;
+                    }
+                }
+            }
+        }
+        .banner-nav {
+            height: 76px;
+            background: url(../images/fl_bg.png) repeat-x left bottom;
+            background-size: auto 100%;
+            @media (min-width: $grid-float-breakpoint) {
+                height: 152px;
+            }
+            .col-xs-3 {
+                height: 100%;
+                a {
+                    display: block;
+                    width: 100%;
+                    color: #444444;
+                    height: 152px;
+                    text-decoration: none;
+                    height: 76px;
+                    padding-top: 50px;
+                    @media (min-width: $grid-float-breakpoint) {
+                        padding-top: 100px;
+                    }
+                    &:hover {
+                        color: #333333;
+                    }
+                    &.dangao {
+                        background: url(../images/fl_1.png) center 10px no-repeat;
+                        background-size: auto 50%;
+                        @media (min-width: $grid-float-breakpoint) {
+                            background: url(../images/fl_1.png) center 30px no-repeat;
+                        }
+                        &:hover {
+                            background-image: url(../images/fl_01.png)
+                        }
+                    }
+                    &.mianbao {
+                        background: url(../images/fl_2.png) center 10px no-repeat;
+                        background-size: auto 50%;
+                        @media (min-width: $grid-float-breakpoint) {
+                            background: url(../images/fl_2.png) center 30px no-repeat;
+                        }
+                        &:hover {
+                            background-image: url(../images/fl_02.png)
+                        }
+                    }
+                    &.liaoli {
+                        background: url(../images/fl_3.png) center 10px no-repeat;
+                        background-size: auto 50%;
+                        @media (min-width: $grid-float-breakpoint) {
+                            background: url(../images/fl_3.png) center 30px no-repeat;
+                        }
+                        &:hover {
+                            background-image: url(../images/fl_03.png)
+                        }
+                    }
+                    &.ertong {
+                        background: url(../images/fl_4.png) center 10px no-repeat;
+                        background-size: auto 50%;
+                        @media (min-width: $grid-float-breakpoint) {
+                            background: url(../images/fl_4.png) center 30px no-repeat;
+                        }
+                        &:hover {
+                            background-image: url(../images/fl_04.png)
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.main-content {
+    .case-show {
+        padding: 16px 0;
+        position: relative;
+        .label {
+            position: absolute;
+            left: 10px;
+            top: 10px;
+            border: 2px solid #fff;
+            padding: 10px 20px;
+            color: #fff;
+            font-size: 18px;
+            @media (min-width: $grid-float-breakpoint) {
+                left: 20px;
+                top: 20px;
+                border: 4px solid #fff;
+                padding: 15px 30px;
+                color: #fff;
+                font-size: 24px;
+            }
+        }
+    }
+}

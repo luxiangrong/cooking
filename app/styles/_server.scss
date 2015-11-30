@@ -1,0 +1,140 @@
+.banner {
+    &.banner-server {
+        background: url(../images/fw_bg.jpg) repeat-x center top;
+        .banner-nav {
+            background: url(../images/fw_1.jpg) no-repeat center top;
+            .course {
+                position: relative;
+                margin: 10px 0;
+                .padding-patch {
+                    a {
+                        background: url(../images/zp_4.png) left top;
+                        display: block;
+                        color: #fff;
+                        text-decoration: none;
+                        text-align: center;
+                        line-height: 1.5;
+                        margin: 0px 10px;
+                        padding: 15px 0;
+                        strong {
+                            display: block;
+                            font-size: 30px;
+                            border-bottom: 1px solid #fff;
+                        }
+                        small {
+                            display: block;
+                            font-size: 14px;
+                        }
+                        &:hover {
+                            background-color: #000;
+                        }
+                    }
+                }
+                @media (min-width: $grid-float-breakpoint) {
+                    position: relative;
+                    height: 600px;
+                    margin: 0;
+                    .padding-patch {
+                        position: absolute;
+                        width: 100%;
+                        height: 130px;
+                        left: 0;
+                        top: 50%;
+                        margin-top: -65px;
+                        a {
+                            background: url(../images/zp_4.png) left top;
+                            display: block;
+                            color: #fff;
+                            text-decoration: none;
+                            text-align: center;
+                            line-height: 1.5;
+                            margin: 0px 10px;
+                            padding: 15px 0;
+                            strong {
+                                display: block;
+                                font-size: 40px;
+                                border-bottom: 1px solid #fff;
+                            }
+                            small {
+                                display: block;
+                                font-size: 21px;
+                            }
+                            &:hover {
+                                background-color: #000;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.main-content {
+    margin-top: 20px;
+    ul.tab {
+        margin-left: 0;
+        padding-left: 0;
+        &.tab-center {
+            text-align: center;
+            > li {
+                display: inline-block;
+                list-style: none;
+                max-width: 206px;
+                min-width: 130px;
+                width: 25%;
+                margin: 0 10px;
+                > a {
+                    display: block;
+                    height: 54px;
+                    line-height: 54px;
+                    color: #333333;
+                    border: 3px solid #ff1366;
+                    text-decoration: none;
+                }
+                &:hover {
+                    a {
+                        color: #ff1366;
+                    }
+                }
+                &.active {
+                    a {
+                        background-color: #ff1366;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+    .course-show {
+        h5 {
+            font-size: 15px;
+            color: #ff6884;
+            padding: 0 10px;
+        }
+        .course-slick {
+            background-color: #ff6884;
+            padding: 20px 10px;
+            .slick-slide {
+                outline: none;
+                text-align: center;
+                margin: 0 10px;
+                img {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+            .slick-prev:before, .slick-next:before {
+            	color: #fff;
+            }
+            .slick-prev {
+            	left: 1px;
+            	z-index: 1;
+            }
+            .slick-next {
+            	right: 1px;
+            	z-index: 1;
+            }
+        }
+    }
+}
