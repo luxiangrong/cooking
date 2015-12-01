@@ -1,0 +1,42 @@
+.page-store {
+    .banner {
+        &.banner-store {
+        	background: url(../images/md_bg.jpg) repeat-x center top;
+        }
+        .slick-slider {
+            margin-bottom: 0;
+        }
+        .slick-dots {
+            bottom: 0px;
+            li {
+                button {
+                    &:before {
+                        color: #ffffff;
+                        @include opacity(1);
+                        font-size: 12px;
+                    }
+                }
+                &:hover {
+                    button {
+                        &:before {
+                            color: lighten(#ff607e, 20%);
+                        }
+                    }
+                }
+                &.slick-active {
+                    button {
+                        &:before {
+                            color: #ff607e;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .main-content {
+    	.container {
+    		background-color: #bfb7a9;
+    		padding: 20px;
+    	}
+    }
+}

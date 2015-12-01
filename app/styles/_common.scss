@@ -109,6 +109,22 @@
             }
         }
     }
+    .container {
+        position: relative;
+        .nav-other {
+            position: absolute;
+            right: 0px;
+            top: 15px;
+            a {
+                padding: 0 30px;
+                color: #666;
+                text-decoration: none;
+                &:hover {
+                    color: #fc8ea0;
+                }
+            }
+        }
+    }
 }
 
 //网站底部样式
