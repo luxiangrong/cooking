@@ -12,6 +12,9 @@ $icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
 *:after {
   @include box-sizing(content-box);
 }
+body {
+	background-color: #fff9fa;
+}
 
 .container {
     @media (min-width: $grid-float-breakpoint) {
@@ -36,3 +39,11 @@ $icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
 @import "store";
 //企业活动
 @import "activity";
+//会员中心
+@import "member";
+//作品展示
+@import "works";
+//招聘信息
+@import "employment";
+//烘培助手
+@import "baking";

@@ -1,0 +1,64 @@
+.page-employment {
+    .banner {
+        &.banner-employment {
+            background: url(../images/zp_30.jpg) repeat-x left top;
+            .container {
+                position: relative;
+                .label {
+                    position: absolute;
+                    right: 15px;
+                    bottom: 15px;
+                    background: url(../images/zp_4.png);
+                    padding: 0 15px;
+                    h1 {
+                        color: #fff;
+                        font-size: 60px;
+                        small {
+                            font-size: 16px;
+                            display: block;
+                            color: #fff;
+                            text-align: center;
+                            border-top: 1px dashed #fff;
+                            margin-top: 10px;
+                            padding-top: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .main-content {
+        .info {
+            border: 1px dashed #ccc;
+            padding: 10px;
+            margin-bottom: 50px;
+            position: relative;
+            h1.title {
+                background-color: #ff2b52;
+                line-height: 40px;
+                font-size: 18px;
+                font-weight: normal;
+                color: #fff;
+                padding: 0 10px;
+                width: 50%;
+                margin-top: 0;
+            }
+            p {
+                font-size: 15px;
+                line-height: 1.5;
+            }
+            .img-wrap {
+                @media (min-width: $grid-float-breakpoint) {
+                    padding: 30px;
+                }
+            }
+            .img-responsive {
+                @media (min-width: $grid-float-breakpoint) {
+                    &.mt30p {
+                        margin-top: 30%;
+                    }
+                }
+            }
+        }
+    }
+}

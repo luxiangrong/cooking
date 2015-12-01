@@ -1,0 +1,71 @@
+.page-member {
+    .banner {
+        &.banner-member {
+            background: url(../images/hy_bg.jpg) repeat-x left top;
+            .container {
+                position: relative;
+                .label {
+                    position: absolute;
+                    right: 15px;
+                    bottom: 15px;
+                    background: url(../images/zp_4.png);
+                    padding: 0 15px;
+                    h1 {
+                        color: #fff;
+                        font-size: 60px;
+                        small {
+                            font-size: 22px;
+                            display: block;
+                            color: #fff;
+                            text-align: center;
+                            border-top: 1px dashed #fff;
+                            margin-top: 10px;
+                            padding-top: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .main-content {
+    	margin-bottom: 50px;
+    	.padding-patch {
+    		padding: 15px;
+    		.youhui {
+    			border: 1px solid #cccccc;
+    			padding: 10% 5%;
+    			@include clearfix();
+    		}
+    	}
+        .title-h {
+            background-color: #ff1e48;
+            color: #fff;
+            font-size: 40px;
+            line-height: 70px;
+            padding: 0 20px;
+            display: inline-block;
+        }
+        .title-v {
+            background-color: #ff1e48;
+            width: 40px;
+            color: #fff;
+            font-size: 40px;
+            line-height: 1.1;
+            padding: 20px 20px;
+            display: inline-block;
+            float: left;
+        }
+        .youhui-description {
+            margin-left: 100px;
+            p {
+                font-size: 18px;
+                line-height: 2;
+            }
+            strong {
+                color: #ff1e48;
+                font-size: 26px;
+                font-weight: normal;
+            }
+        }
+    }
+}
