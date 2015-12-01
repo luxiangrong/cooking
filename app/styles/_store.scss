@@ -1,7 +1,7 @@
 .page-store {
     .banner {
         &.banner-store {
-        	background: url(../images/md_bg.jpg) repeat-x center top;
+            background: url(../images/md_bg.jpg) repeat-x center top;
         }
         .slick-slider {
             margin-bottom: 0;
@@ -34,9 +34,33 @@
         }
     }
     .main-content {
-    	.container {
-    		background-color: #bfb7a9;
-    		padding: 20px;
-    	}
+        .container {
+            margin-bottom: 30px;
+            .row {
+                background-color: #bfb7a9;
+                padding: 20px;
+                color: #fff;
+                h1 {
+					font-weight: bold;
+					margin-bottom: 30px;
+                }
+                h2 {
+                	text-align: center;
+                	background-color: #eaeaea;
+                	font-size: 15px;
+                	padding: 5px;
+                	margin-bottom: 0;
+                	color: #333;
+                }
+                p {
+                	font-size: 16px;
+                	margin-bottom: 20px;
+                }
+                .img-responsive {
+                    margin: 0 auto;
+                    width: 100%;
+                }
+            }
+        }
     }
 }

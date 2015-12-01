@@ -1,0 +1,80 @@
+.page-activity {
+    .banner {
+        &.banner-activity {
+            background: url(../images/md_bg.jpg) repeat-x left top;
+        }
+    }
+    .main-content {
+        @media (min-width: $grid-float-breakpoint) {
+            .col-p20 {
+                width: 20%;
+            }
+        }
+        .padding-patch {
+        	padding: 10px;
+        }
+        .title {
+        	border-radius: 25px;
+        	padding: 25px 0;
+        	margin-bottom: 20px;
+            h1 {
+                font-size: 36px;
+                text-align: center;
+                color: #fff;
+                margin-top: 0;
+                margin-bottom: 0;
+                small {
+                    font-size: 18px;
+                    display: block;
+                    color: #fff;
+                    margin-top: 10px;
+                }
+            }
+            &.title-1 {
+            	background-color: #ff62b3;
+            }
+            &.title-2 {
+            	background-color: #ffcc00;
+            }
+            &.title-3 {
+            	background-color: #0ab7eb;
+            }
+            &.title-4 {
+            	background-color: #d154ff;
+            }
+            &.title-5 {
+            	background-color: #ff3939;
+            }
+        }
+        .content {
+        	color: #666;
+        	font-size: 16px;
+        	padding: 0 15px;
+        	margin: 0 -10px;
+        	@media (min-width: $grid-float-breakpoint) {
+	            border-right: 1px solid #ccc;
+	        }
+        	&.last {
+        		border-right: none;
+        	}
+        	h4 {
+        		margin-top: 0;
+        		font-weight: bold;
+        	}
+        	p {
+        		line-height: 2;
+        		text-align: justify;
+        	}
+        }
+        .other-info {
+        	margin-top: 30px;
+        	margin-bottom: 50px;
+        	p {
+        		line-height: 2;
+        		margin-top: 20px;
+        		padding: 0 15px;
+        		font-size: 16px;
+        	}
+        }
+    }
+}
