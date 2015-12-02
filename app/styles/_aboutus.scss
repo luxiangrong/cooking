@@ -1,0 +1,38 @@
+.page-aboutus {
+    .banner {
+        &.banner-aboutus {
+            background: url(../images/gy_bg.jpg) repeat-x left top;
+        }
+    }
+    .main-content {
+        .row {
+        }
+        .padding-patch {
+        	padding: 20px;
+        }
+        h1 {
+            font-size: 85px;
+            font-weight: bold;
+            text-align: center;
+            border-bottom: 3px solid #999999;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 16px;
+            text-indent: 2em;
+            line-height: 1.85;
+            color: #666;
+            strong {
+                font-size: 25px;
+                font-weight: normal;
+                color: #333;
+            }
+        }
+        .top-split {
+            border-top: 3px dotted #999999;
+            padding-top: 20px;
+            margin-top: 20px;
+        }
+    }
+}

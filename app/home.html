@@ -169,7 +169,7 @@
             $('.banner-slick').on('setPosition', function() {
                 $('.banner-menu li').each(function(i, item) {
                     var h = $(this).height();
-                    $(this).css('line-height', h + 'px');
+                    $(this).css('line-height', h - 1  + 'px');
                 });
             });
         });

@@ -51,11 +51,12 @@
                 }
                 background: url(../images/rk_bg.png) repeat-y right top;
                 text-align: center;
-                border-bottom: 1px solid #ddd;
                 a {
                     vertical-align: middle;
                     text-decoration: none;
                     color: #666666;
+                    border-bottom: 1px solid #ddd;
+                    display: block;
                     img {
                         margin-right: 10px;
                     }
@@ -83,11 +84,11 @@
                     display: block;
                     width: 100%;
                     color: #444444;
-                    height: 152px;
                     text-decoration: none;
-                    height: 76px;
+                    height: 26px;
                     padding-top: 50px;
                     @media (min-width: $grid-float-breakpoint) {
+                        height: 52px;
                         padding-top: 100px;
                     }
                     &:hover {
@@ -153,7 +154,6 @@
             font-size: 18px;
             @media (min-width: $grid-float-breakpoint) {
                 left: 20px;
-                top: 20px;
                 border: 4px solid #fff;
                 padding: 15px 30px;
                 color: #fff;
