@@ -193,6 +193,24 @@
             </div>
         </div>
     </footer>
+    <script type="text/template">
+    </script>
+    <div id="product-detail" class="row" style="display: none;">
+        <div class="col-xs-6 ">
+            <div class="padding-patch pic">
+                <img src="images/j03.jpg" alt="" class="img-responsive">
+            </div>
+        </div>
+        <div class="col-xs-6">
+            <div class="padding-patch description">
+                <h3>史多伦面包</h3>
+                <p>史多伦是德国传统的圣诞面包,和一般面包相比,它的配方加大了黄油和鸡蛋的比例,同时还加入了大量的酒渍水果干。外观看上去像乡村面包很朴实,质地却是细腻柔软,这高油高糖的,又带着酒渍水果干的香甜,想不好吃都难!</p>
+                <div class="text-center">
+                	<button class="btn btn-buy">立即购买</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->
     <script src="/bower_components/jquery/dist/jquery.js"></script>
@@ -219,50 +237,54 @@
     <script src="scripts/main.js"></script>
     <!-- endbuild -->
     <script>
-    (function($) {
-        $(document).ready(function() {
-            $('.course-slick').slick({
-                autoplay: false,
-                dots: false,
-                arrows: true,
-                speed: 500,
-                slidesToShow: 1,
-                slidesToScroll: 1,
-                responsive: [{
-                        breakpoint: 2048,
-                        settings: {
-                            slidesToShow: 4,
-                            slidesToScroll: 4,
-                        }
-                    },{
-                        breakpoint: 1024,
-                        settings: {
-                            slidesToShow: 4,
-                            slidesToScroll: 4,
-                        }
-                    }, {
-                        breakpoint: 600,
-                        settings: {
-                            slidesToShow: 3,
-                            slidesToScroll: 3
-                        }
-                    }, {
-                        breakpoint: 480,
-                        settings: {
-                            slidesToShow: 2,
-                            slidesToScroll: 2
-                        }
-                    }, {
-                        breakpoint: 360,
-                        settings: {
-                            slidesToShow: 1,
-                            slidesToScroll: 1
-                        }
-                    }
-                ]
-            });
+    jQuery(function($) {
+        $('.course-slick').slick({
+            autoplay: false,
+            dots: false,
+            arrows: true,
+            speed: 500,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            responsive: [{
+                breakpoint: 2048,
+                settings: {
+                    slidesToShow: 4,
+                    slidesToScroll: 4,
+                }
+            }, {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 4,
+                    slidesToScroll: 4,
+                }
+            }, {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3
+                }
+            }, {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2
+                }
+            }, {
+                breakpoint: 360,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }]
         });
-    })(jQuery);
+
+        var d = dialog({
+            title: '',
+            content: $('#product-detail').get(0),
+            skin: 'skin-a'
+        });
+        d.showModal();
+    });
     </script>
 </body>
 

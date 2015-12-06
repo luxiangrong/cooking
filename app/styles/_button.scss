@@ -6,3 +6,15 @@
     padding-left: 50px;
     padding-right: 50px;
 }
+
+.btn-buy {
+	@include button-variant(#fff, #ff1366, #ffffff);
+	line-height: 20px;
+	padding-left: 20%;
+	padding-right: 20%;
+	border-radius: 8px;
+	@media (min-width: $screen-phone) {
+		line-height: 25px;
+		border-radius: 12px;
+	}
+}
