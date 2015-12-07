@@ -11,7 +11,6 @@
     .ui-dialog-header {
         border: none;
         display: block !important;
-        height: 20px;
         .ui-dialog-close {
             position: absolute;
             display: block;
@@ -19,24 +18,38 @@
             font-size: 24px;
             font-weight: normal;
             text-shadow: none;
+            top: 5px;
+            right: 5px;
             width: 20px;
             height: 28px;
-            top: 2px;
-            right: 2px;
-            background-color: #ff1366;
             border-radius: 14px;
+            background-color: #ff1366;
+            z-index: 1000;
             @include opacity(0.8);
             &:hover {
                 @include opacity(1);
+            }
+            @media (min-width: $screen-phone) {
+                width: 30px;
+                height: 38px;
+                border-radius: 24px;
             }
         }
     }
     .ui-dialog-body {
         padding: 0;
     }
+    &.skin-full {
+        .ui-dialog-body {
+            .ui-dialog-content {
+                margin-top: -46px;
+            }
+        }
+    }
 }
 
-#product-detail {
+//单品点击弹出
+.product-detail {
     max-width: 1024px;
     .padding-patch {
         &.pic {
@@ -63,42 +76,226 @@
         }
     }
     img {
-    	display: block;
+        display: block;
         margin: 0 auto;
     }
     h3 {
         color: #ff1366;
         text-align: center;
         border-bottom: 1px solid #ff1366;
-		font-size: 24px;
-		margin-top: 0;
-		margin-bottom: 5px;
-		padding-bottom: 5px;
+        font-size: 24px;
+        margin-top: 0;
+        margin-bottom: 5px;
+        padding-bottom: 5px;
         @media (min-width: $screen-phone) {
-        	font-size: 32px;
-			padding-bottom: 10px;
-			margin-bottom: 10px;
+            font-size: 32px;
+            padding-bottom: 10px;
+            margin-bottom: 10px;
         }
         @media (min-width: $screen-tablet) {
-        	font-size: 36px;
-			padding-bottom: 20px;
-			margin-bottom: 30px;
+            font-size: 36px;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
         }
     }
     p {
         color: #ff1366;
         border-bottom: 1px solid #ff1366;
         @media (min-width: $screen-phone) {
-        	font-size: 20px;
-			padding-bottom: 10px;
-			line-height: 1.5;
-			margin-bottom: 30px;
+            font-size: 20px;
+            padding-bottom: 10px;
+            line-height: 1.5;
+            margin-bottom: 30px;
         }
         @media (min-width: $screen-tablet) {
-        	font-size: 24px;
-			padding-bottom: 20px;
-			line-height: 1.8;
-			margin-bottom: 30px;
+            font-size: 24px;
+            padding-bottom: 20px;
+            line-height: 1.8;
+            margin-bottom: 30px;
+        }
+    }
+}
+
+//会员信息
+.member-info {
+    max-width: 1024px;
+    width: 100%;
+    .col-nav {
+        background-color: #ff1366;
+    }
+    padding: 40px 0;
+    @media (min-width: $screen-phone) {
+        padding: 50px 0;
+    }
+    @media (min-width: $screen-tablet) {
+        padding: 0;
+    }
+    .nav {
+        > li {
+            text-align: center;
+            > a {
+                color: #ffb0cc;
+                border-left: 1px solid #ffb0cc;
+                padding: 0;
+                padding-left: 1em;
+                display: inline-block;
+                &:hover {
+                    color: #fff;
+                    background-color: transparent;
+                    border-left: 1px solid #fff;
+                }
+            }
+        }
+        &.nav-tabs {
+            > li {
+                width: 33%;
+                > a {
+                    border: none;
+                    border-radius: 0px;
+                    padding: 5px 0;
+                }
+                &.active {
+                    > a {
+                        background-color: transparent;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+        &.nav-stacked {
+            padding-top: 50px;
+            padding-bottom: 50px;
+            > li {
+                margin: 40px 0;
+            }
+        }
+    }
+    .col-content {
+        @media (min-width: $screen-phone) {
+            padding: 50px 0;
+        }
+    }
+    .item {
+        .padding-patch {
+            padding: 2%;
+            .pic {
+                position: relative;
+                img {
+                    width: 100%;
+                }
+                .title {
+                    position: absolute;
+                    line-height: 30px;
+                    background-color: rgba(0, 0, 0, 0.5);
+                    color: #fff;
+                    width: 100%;
+                    left: 0;
+                    bottom: 0;
+                    text-align: center;
+                    margin: 0;
+                }
+            }
+            h4 {
+                color: #ff1366;
+                font-size: 24px;
+                text-align: center;
+            }
+            .buttons {
+                text-align: center;
+            }
+        }
+    }
+}
+
+//确认支付
+.checkout {
+    max-width: 1024px;
+    h1 {
+        text-align: center;
+        color: #ff1366;
+        font-size: 32px;
+        border-bottom: 1px solid #ff1366;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+    }
+    .footer {
+        text-align: center;
+        border-top: 1px solid #ff1366;
+        padding-bottom: 20px;
+        h3 {
+            font-size: 26px;
+            color: #ff1366;
+        }
+    }
+    .cart {
+        padding: 20px 5px;
+        @media (min-width: $screen-phone) {
+            padding: 20px 15%;
+        }
+        .padding-patch {
+            padding: 1%;
+            @media (min-width: $screen-phone) {
+                padding: 5%;
+            }
+        }
+        .product {
+            position: relative;
+            margin-bottom: 3px;
+            img {
+                width: 100%;
+            }
+            .title {
+                position: absolute;
+                line-height: 30px;
+                background-color: rgba(0, 0, 0, 0.5);
+                color: #fff;
+                width: 100%;
+                left: 0;
+                bottom: 0;
+                text-align: center;
+                margin: 0;
+            }
+            .btn-remove {
+                display: block;
+                width: 25px;
+                height: 25px;
+                position: absolute;
+                top: 5px;
+                right: 5px;
+                background: url(../images/p01.png) no-repeat;
+                background-size: cover;
+            }
+        }
+        .form-control {
+            height: auto;
+            padding-left: 0;
+            padding-right: 0;
+        }
+        .input-group {
+            .input-group-btn {
+                .btn-default {
+                    border-color: #ff1366;
+                    color: #ff1366;
+                }
+            }
+            .form-control {
+                border-color: #ff1366;
+                color: #ff1366;
+                text-align: center;
+                padding-left: 0;
+                padding-right: 0;
+            }
+        }
+        .form-horizontal {
+            margin-top: 30px;
+            label {
+                color: #ff1366;
+                font-weight: normal;
+                text-align: center;
+            }
+            .form-control{
+                border-color: #ff1366;
+            }
         }
     }
 }

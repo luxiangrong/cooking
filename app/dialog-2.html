@@ -195,18 +195,65 @@
     </footer>
     <script type="text/template">
     </script>
-    <div id="product-detail"  class="product-detail row" style="display: none;">
-        <div class="col-xs-6 ">
-            <div class="padding-patch pic">
-                <img src="images/j03.jpg" alt="" class="img-responsive">
-            </div>
+    <div id="member-info" class="row member-info" style="display: none;">
+        <div class="col-sm-3 col-nav">
+            <ul class="nav nav-stacked hidden-xs">
+                <li class="active"><a href="">会员信息</a></li>
+                <li><a href="">会员预约</a></li>
+                <li><a href="">课程查询</a></li>
+                <li><a href="">会员活动</a></li>
+                <li><a href="">修改信息</a></li>
+                <li><a href="">修改密码</a></li>
+            </ul>
+            <ul class="nav nav-tabs visible-xs-block">
+                <li class="active"><a href="">会员信息</a></li>
+                <li><a href="">会员预约</a></li>
+                <li><a href="">课程查询</a></li>
+                <li><a href="">会员活动</a></li>
+                <li><a href="">修改信息</a></li>
+                <li><a href="">修改密码</a></li>
+            </ul>
         </div>
-        <div class="col-xs-6">
-            <div class="padding-patch description">
-                <h3>史多伦面包</h3>
-                <p>史多伦是德国传统的圣诞面包,和一般面包相比,它的配方加大了黄油和鸡蛋的比例,同时还加入了大量的酒渍水果干。外观看上去像乡村面包很朴实,质地却是细腻柔软,这高油高糖的,又带着酒渍水果干的香甜,想不好吃都难!</p>
-                <div class="text-center">
-                	<button class="btn btn-buy">立即购买</button>
+        <div class="col-sm-9 col-content">
+            <div class="row">
+                <div class="col-xs-4 item">
+                    <div class="padding-patch">
+                        <div class="pic">
+                            <img src="images/j04.jpg" alt="">
+                            <p class="title">史多伦面包</p>
+                        </div>
+                        <h4>剩余3节</h4>
+                        <div class="buttons row">
+                            <div class="col-xs-6"><a href="" class="btn btn-a">预约</a></div>
+                            <div class="col-xs-6"><a href="" class="btn btn-a">评论</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-4 item">
+                    <div class="padding-patch">
+                        <div class="pic">
+                            <img src="images/j04.jpg" alt="">
+                            <p class="title">史多伦面包</p>
+                        </div>
+                        <h4>剩余3节</h4>
+                        <div class="buttons row">
+                            <div class="col-xs-6"><a href="" class="btn btn-a">预约</a></div>
+                            <div class="col-xs-6"><a href="" class="btn btn-a">评论</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-4 item">
+                    <div class="padding-patch">
+                        <div class="pic">
+                            <img src="images/j04.jpg" alt="">
+                            <p class="title">史多伦面包</p>
+                        </div>
+                        <h4>剩余3节</h4>
+                        <div class="buttons row">
+                            <div class="col-xs-6"><a href="" class="btn btn-a">预约</a></div>
+                            <div class="col-xs-6"><a href="" class="btn btn-a">评论</a></div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -280,8 +327,8 @@
 
         var d = dialog({
             title: '',
-            content: $('#product-detail').get(0),
-            skin: 'skin-a'
+            content: $('#member-info').get(0),
+            skin: 'skin-a skin-full'
         });
         d.showModal();
     });

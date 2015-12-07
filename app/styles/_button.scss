@@ -18,3 +18,12 @@
 		border-radius: 12px;
 	}
 }
+
+.btn-a {
+	@include button-variant(#fff, #ff1366, #ffffff);
+	display:block;
+}
+
+.btn-b {
+	@include button-variant(#fff, #ff1366, #ffffff);
+}
