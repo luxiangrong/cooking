@@ -27,3 +27,9 @@
 .btn-b {
 	@include button-variant(#fff, #ff1366, #ffffff);
 }
+
+.btn-login {
+	@include button-variant(#fff, #ffbc1c, #ffbc1c);
+	padding-left: 0;
+	padding-right: 0;
+}

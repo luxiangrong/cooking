@@ -1,0 +1,68 @@
+.page-login {
+    .main-content {
+        background: url(../images/j05.jpg) center top;
+        background-size: cover;
+        .bg {
+            background: url(../images/p03.png) repeat-x left top;
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+        .col-form {
+            background-color: rgba(255, 255, 255, 0.64);
+            padding-top: 3px;
+            .title {
+                background-color: #ff7c94;
+                border-radius: 5px 5px 0 0;
+                text-align: center;
+                color: #fff;
+                font-size: 20px;
+                line-height: 50px;
+                margin: 0 3px;
+            }
+            .content {
+                margin-top: 30px;
+                background: url(../images/p04.png) no-repeat 10px 5px;
+                ;
+                padding-left: 30px;
+                padding-right: 30px;
+                .help {
+                    a {
+                        color: inherit;
+                    }
+                }
+                .form-horizontal {
+                	margin-top: 20px;
+                    label {
+                        text-align: justify;
+                    }
+                    .form-group {
+                    	margin-top: 20px;
+                    }
+                    .form-control {
+                        height: auto;
+                        padding-left: 0;
+                        padding-right: 0;
+                    }
+                }
+            }
+        }
+        .col-banner {
+        	.padding-patch {
+        		@media (min-width: $screen-tablet) {
+        			padding-left: 15px;
+        		}
+        	}
+            .banner-slick {
+            	max-height: 464px;
+            	overflow: hidden;
+                img {
+                    width: 100%;
+                }
+                .slick-dots {
+                	z-index: 1000;
+                	bottom: 0px;
+                }
+            }
+        }
+    }
+}
