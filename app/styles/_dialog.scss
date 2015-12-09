@@ -1,5 +1,7 @@
 .ui-popup-backdrop {
-    background: rgba(255, 255, 255, 0.8) !important;
+    background: rgba(255, 255, 255, 1) !important;
+    opacity: 0.8 !important;
+    filter: alpha(opacity=80) !important;
 }
 
 .skin-a {
@@ -60,18 +62,18 @@
         }
         @media (min-width: $screen-phone) {
             &.pic {
-                padding: 10% 5% 10% 10%;
+                padding: 5% 5% 10% 10%;
             }
             &.description {
-                padding: 10% 10% 10% 5%;
+                padding: 5% 10% 10% 5%;
             }
         }
         @media (min-width: $screen-tablet) {
             &.pic {
-                padding: 15% 7.5% 15% 15%;
+                padding: 5% 7.5% 15% 15%;
             }
             &.description {
-                padding: 15% 15% 15% 7.5%;
+                padding: 5% 15% 15% 7.5%;
             }
         }
     }
@@ -119,7 +121,6 @@
 //会员信息
 .member-info {
     max-width: 1024px;
-    width: 100%;
     .col-nav {
         background-color: #ff1366;
     }

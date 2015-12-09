@@ -328,8 +328,9 @@
         var d = dialog({
             title: '',
             content: $('#member-info').get(0),
-            skin: 'skin-a skin-full'
-        });
+            skin: 'skin-a skin-full',
+            quickClose: true
+        }).width($(window).width());
         d.showModal();
     });
     </script>
