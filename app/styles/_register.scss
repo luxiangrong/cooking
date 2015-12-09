@@ -1,0 +1,54 @@
+.page-register {
+    .banner {
+        .container {
+            margin-top: 20px;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #040000;
+            padding-bottom: 2px;
+        }
+    }
+    .main-content {
+        .title {
+            background-color: #68361b;
+            line-height: 40px;
+            color: #fff;
+            font-size: 18px;
+            padding: 0 10px;
+            margin-top: 0;
+        }
+        .col-side {
+			.pp	{
+				padding-right: 10px;
+			}
+			.nav {
+				> li {
+					margin-bottom: 10px;
+					> a {
+						font-size: 18px;
+						font-weight: bold;
+						color: #68361b;
+						text-align: center;
+					}
+					&.nav-item-1 {
+						> a {
+							background-color: #cce3ad;
+						}
+					}
+					&.nav-item-2 {
+						> a {
+							background-color: #f6e09d;
+						}
+					}
+					&.nav-item-3 {
+						> a {
+							background-color: #f19a9b;
+						}
+					}
+				}
+			}
+        }
+        .col-main {
+
+        }
+    }
+}

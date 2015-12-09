@@ -208,6 +208,50 @@
     }
 }
 
+//课程预约
+.booking {
+    max-width: 1024px;
+    > .padding-patch {
+        padding: 10px;
+    }
+    h1 {
+        text-align: center;
+        color: #ff1366;
+        font-size: 32px;
+        border-bottom: 1px solid #ff1366;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+    }
+    .col-calendar {
+        > .padding-patch {
+            padding: 10px;
+        }
+    }
+    .col-teachers {
+        img {
+            margin: 0 auto;
+        }
+        > .padding-patch {
+            padding: 10px;
+        }
+        .col-teacher {
+            > .padding-patch {
+                padding: 5px;
+            }
+        }
+    }
+    p {
+        color: #ff1366;
+        font-size: 22px;
+        padding: 10px;
+    }
+    .btn-b {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+
+
 //确认支付
 .checkout {
     max-width: 1024px;
