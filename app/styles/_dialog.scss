@@ -52,7 +52,7 @@
 
 //单品点击弹出
 .product-detail {
-    max-width: 1024px;
+    max-width: 640px;
     .padding-patch {
         &.pic {
             padding: 5% 5% 3% 5%;
@@ -85,17 +85,17 @@
         color: #ff1366;
         text-align: center;
         border-bottom: 1px solid #ff1366;
-        font-size: 24px;
+        font-size: 18px;
         margin-top: 0;
         margin-bottom: 5px;
         padding-bottom: 5px;
         @media (min-width: $screen-phone) {
-            font-size: 32px;
+            font-size: 20px;
             padding-bottom: 10px;
             margin-bottom: 10px;
         }
         @media (min-width: $screen-tablet) {
-            font-size: 36px;
+            font-size: 24px;
             padding-bottom: 20px;
             margin-bottom: 30px;
         }
@@ -103,110 +103,111 @@
     p {
         color: #ff1366;
         border-bottom: 1px solid #ff1366;
+        font-size: 16px;
         @media (min-width: $screen-phone) {
-            font-size: 20px;
+            font-size: 18px;
             padding-bottom: 10px;
             line-height: 1.5;
             margin-bottom: 30px;
         }
         @media (min-width: $screen-tablet) {
-            font-size: 24px;
+            font-size: 20px;
             padding-bottom: 20px;
-            line-height: 1.8;
+            line-height: 1.5;
             margin-bottom: 30px;
         }
     }
 }
 
-//会员信息
-.member-info {
-    max-width: 1024px;
-    .col-nav {
-        background-color: #ff1366;
-    }
-    padding: 40px 0;
-    @media (min-width: $screen-phone) {
-        padding: 50px 0;
-    }
-    @media (min-width: $screen-tablet) {
-        padding: 0;
-    }
-    .nav {
-        > li {
-            text-align: center;
-            > a {
-                color: #ffb0cc;
-                border-left: 1px solid #ffb0cc;
-                padding: 0;
-                padding-left: 1em;
-                display: inline-block;
-                &:hover {
-                    color: #fff;
-                    background-color: transparent;
-                    border-left: 1px solid #fff;
-                }
-            }
-        }
-        &.nav-tabs {
-            > li {
-                width: 33%;
-                > a {
-                    border: none;
-                    border-radius: 0px;
-                    padding: 5px 0;
-                }
-                &.active {
-                    > a {
-                        background-color: transparent;
-                        color: #fff;
-                    }
-                }
-            }
-        }
-        &.nav-stacked {
-            padding-top: 50px;
-            padding-bottom: 50px;
-            > li {
-                margin: 40px 0;
-            }
-        }
-    }
-    .col-content {
-        @media (min-width: $screen-phone) {
-            padding: 50px 0;
-        }
-    }
-    .item {
-        .padding-patch {
-            padding: 2%;
-            .pic {
-                position: relative;
-                img {
-                    width: 100%;
-                }
-                .title {
-                    position: absolute;
-                    line-height: 30px;
-                    background-color: rgba(0, 0, 0, 0.5);
-                    color: #fff;
-                    width: 100%;
-                    left: 0;
-                    bottom: 0;
-                    text-align: center;
-                    margin: 0;
-                }
-            }
-            h4 {
-                color: #ff1366;
-                font-size: 24px;
-                text-align: center;
-            }
-            .buttons {
-                text-align: center;
-            }
-        }
-    }
-}
+// //会员信息
+// .member-info {
+//     max-width: 1024px;
+//     .col-nav {
+//         background-color: #ff1366;
+//     }
+//     padding: 40px 0;
+//     @media (min-width: $screen-phone) {
+//         padding: 50px 0;
+//     }
+//     @media (min-width: $screen-tablet) {
+//         padding: 0;
+//     }
+//     .nav {
+//         > li {
+//             text-align: center;
+//             > a {
+//                 color: #ffb0cc;
+//                 border-left: 1px solid #ffb0cc;
+//                 padding: 0;
+//                 padding-left: 1em;
+//                 display: inline-block;
+//                 &:hover {
+//                     color: #fff;
+//                     background-color: transparent;
+//                     border-left: 1px solid #fff;
+//                 }
+//             }
+//         }
+//         &.nav-tabs {
+//             > li {
+//                 width: 33%;
+//                 > a {
+//                     border: none;
+//                     border-radius: 0px;
+//                     padding: 5px 0;
+//                 }
+//                 &.active {
+//                     > a {
+//                         background-color: transparent;
+//                         color: #fff;
+//                     }
+//                 }
+//             }
+//         }
+//         &.nav-stacked {
+//             padding-top: 50px;
+//             padding-bottom: 50px;
+//             > li {
+//                 margin: 40px 0;
+//             }
+//         }
+//     }
+//     .col-content {
+//         @media (min-width: $screen-phone) {
+//             padding: 50px 0;
+//         }
+//     }
+//     .item {
+//         .padding-patch {
+//             padding: 2%;
+//             .pic {
+//                 position: relative;
+//                 img {
+//                     width: 100%;
+//                 }
+//                 .title {
+//                     position: absolute;
+//                     line-height: 30px;
+//                     background-color: rgba(0, 0, 0, 0.5);
+//                     color: #fff;
+//                     width: 100%;
+//                     left: 0;
+//                     bottom: 0;
+//                     text-align: center;
+//                     margin: 0;
+//                 }
+//             }
+//             h4 {
+//                 color: #ff1366;
+//                 font-size: 24px;
+//                 text-align: center;
+//             }
+//             .buttons {
+//                 text-align: center;
+//             }
+//         }
+//     }
+// }
 
 //课程预约
 .booking {

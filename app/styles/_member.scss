@@ -28,15 +28,15 @@
         }
     }
     .main-content {
-    	margin-bottom: 50px;
-    	.padding-patch {
-    		padding: 15px;
-    		.youhui {
-    			border: 1px solid #cccccc;
-    			padding: 10% 5%;
-    			@include clearfix();
-    		}
-    	}
+        margin-bottom: 50px;
+        .padding-patch {
+            padding: 15px;
+            .youhui {
+                border: 1px solid #cccccc;
+                padding: 10% 5%;
+                @include clearfix();
+            }
+        }
         .title-h {
             background-color: #ff1e48;
             color: #fff;
@@ -65,6 +65,93 @@
                 color: #ff1e48;
                 font-size: 26px;
                 font-weight: normal;
+            }
+        }
+    }
+    //会员信息
+    .member-info {
+        padding-top: 10px;
+        .col-nav {
+            background-color: #ff1366;
+            margin-top: 5px;
+        }
+        @media (min-width: $screen-phone) {
+        }
+        @media (min-width: $screen-tablet) {
+        }
+        .nav {
+            > li {
+                text-align: center;
+                > a {
+                    color: #ffb0cc;
+                    border-left: 1px solid #ffb0cc;
+                    padding: 0;
+                    padding-left: 1em;
+                    display: inline-block;
+                }
+                &:hover,
+                &.active {
+                    > a {
+                        color: #fff;
+                        background-color: transparent;
+                        border-left: 1px solid #fff;
+                    }
+                }
+            }
+            &.nav-tabs {
+                > li {
+                    width: 33%;
+                    > a {
+                        border: none;
+                        border-radius: 0px;
+                        padding: 5px 0;
+                    }
+                    &.active {
+                        > a {
+                            background-color: transparent;
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+            &.nav-stacked {
+                > li {
+                    margin: 38px 0;
+                }
+            }
+        }
+        .col-content {
+            @media (min-width: $screen-phone) {
+            }
+        }
+        .item {
+            .padding-patch {
+                padding: 2%;
+                .pic {
+                    position: relative;
+                    img {
+                        width: 100%;
+                    }
+                    .title {
+                        position: absolute;
+                        line-height: 30px;
+                        background-color: rgba(0, 0, 0, 0.5);
+                        color: #fff;
+                        width: 100%;
+                        left: 0;
+                        bottom: 0;
+                        text-align: center;
+                        margin: 0;
+                    }
+                }
+                h4 {
+                    color: #ff1366;
+                    font-size: 24px;
+                    text-align: center;
+                }
+                .buttons {
+                    text-align: center;
+                }
             }
         }
     }

@@ -119,9 +119,23 @@
                     outline: none;
                     text-align: center;
                     margin: 0 10px;
+                    position: relative;
                     img {
                         width: 100%;
                         height: auto;
+                    }
+                    .title {
+                        position: absolute;
+                        color: #fff;
+                        left: 0;
+                        width: 100%;
+                        bottom: 0;
+                        line-height: 40px;
+                        text-align: center;
+                        background: url(../images/zp_4.png);
+                        &:hover {
+                            color: darken(#fff, 10%);
+                        }
                     }
                 }
                 .slick-prev:before,

@@ -114,6 +114,9 @@
                         line-height: 40px;
                         text-align: center;
                         background: url(../images/zp_4.png);
+                        &:hover {
+                            color: darken(#fff, 10%);
+                        }
                     }
                 }
             }

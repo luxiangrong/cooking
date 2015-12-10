@@ -28,17 +28,104 @@
         }
     }
     .main-content {
-    	margin-bottom: 50px;
-    	padding: 10px;
+        margin-bottom: 50px;
+        padding: 10px;
         h5 {
-        	color:#f74b67;
-        	font-size: 20px;
-        	margin-top: 30px;
+            color: #f74b67;
+            font-size: 20px;
+            margin-top: 30px;
         }
         p {
-        	font-size: 15px;
-        	text-align: justify;
-        	line-height: 1.8;
+            font-size: 15px;
+            text-align: justify;
+            line-height: 1.8;
+        }
+        .baking-info {
+            padding-top: 10px;
+            .col-nav {
+                background-color: #ff1366;
+                margin-top: 5px;
+            }
+            @media (min-width: $screen-phone) {}
+            @media (min-width: $screen-tablet) {}
+            .nav {
+                > li {
+                    text-align: center;
+                    > a {
+                        color: #ffb0cc;
+                        border-left: 1px solid #ffb0cc;
+                        padding: 0;
+                        padding-left: 1em;
+                        display: inline-block;
+                    }
+                    &:hover,
+                    &.active {
+                        > a {
+                            color: #fff;
+                            background-color: transparent;
+                            border-left: 1px solid #fff;
+                        }
+                    }
+                }
+                &.nav-tabs {
+                    > li {
+                        width: 33%;
+                        > a {
+                            border: none;
+                            border-radius: 0px;
+                            padding: 5px 0;
+                        }
+                        &.active {
+                            > a {
+                                background-color: transparent;
+                                color: #fff;
+                            }
+                        }
+                    }
+                }
+                &.nav-stacked {
+                    > li {
+                        margin: 38px 0;
+                    }
+                }
+            }
+            .col-content {
+                @media (min-width: $screen-tablet) {
+                    .row {
+                        padding-left: 1%;
+                    }
+                }
+            }
+            .item {
+                .padding-patch {
+                    padding: 2%;
+                    .pic {
+                        position: relative;
+                        img {
+                            width: 100%;
+                        }
+                        .title {
+                            position: absolute;
+                            line-height: 30px;
+                            background-color: rgba(0, 0, 0, 0.5);
+                            color: #fff;
+                            width: 100%;
+                            left: 0;
+                            bottom: 0;
+                            text-align: center;
+                            margin: 0;
+                        }
+                    }
+                    h4 {
+                        color: #ff1366;
+                        font-size: 24px;
+                        text-align: center;
+                    }
+                    .buttons {
+                        text-align: center;
+                    }
+                }
+            }
         }
     }
 }
