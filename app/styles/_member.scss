@@ -155,4 +155,22 @@
             }
         }
     }
+    //会员信息修改
+    .member-edit {
+        .form-control {
+            height: auto;
+            padding-left: 0;
+            padding-right: 0;
+        }
+        .form-horizontal {
+            padding: 10px;
+            label {
+                text-align: center;
+            }
+            .btn-b {
+                padding-left: 30px;
+                padding-right: 30px;
+            }
+        }
+    }
 }
