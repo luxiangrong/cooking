@@ -120,7 +120,7 @@
                         </a>
                         <div style="display:none">
                             <div id="video-1">
-                                <video style="width: 100%;" src="http://techslides.com/demos/sample-videos/small.mp4"></video>
+                                <video controls  style="width: 100%;" src="http://techslides.com/demos/sample-videos/small.mp4"></video>
                             </div>
                         </div>
                     </div>
@@ -417,7 +417,7 @@
                     }
                 },
                 afterShow: function() {
-                    if (this.content) {
+                    if (this.content && this.content.find('video').length > 0) {
                         // this.content.find('video')[0].play();
                     }
                     $('.fancybox-overlay').off('swiperight').on('swiperight', function() {
