@@ -235,13 +235,13 @@ module.exports = function(grunt) {
         useminPrepare: {
             options: {
                 dest: '<%= config.dist %>',
-                flow: {
-                    steps: {
-                        js: ['concat'],
-                        css: ['concat']
-                    },
-                    post: {}
-                }
+                // flow: {
+                //     steps: {
+                //         js: ['concat'],
+                //         css: ['concat']
+                //     },
+                //     post: {}
+                // }
 
             },
             html: '<%= config.app %>/*.html'
@@ -435,8 +435,8 @@ module.exports = function(grunt) {
         'concurrent:dist',
         'postcss',
         'concat',
-        // 'cssmin',
-        // 'uglify',
+        'cssmin',
+        'uglify',
         'copy:dist',
         'modernizr',
         // 'filerev',

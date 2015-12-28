@@ -1,40 +1,40 @@
 {
-  "name": "cooking",
-  "private": true,
-  "dependencies": {
-    "jquery": "~1.11.3",
-    "bootstrap-sass": "~3.3.5",
-    "modernizr": "~2.8.3",
-    "slick-carousel": "~1.5.8",
-    "art-dialog": "~6.0.4",
-    "fancybox": "fancyBox#~2.1.5",
-    "jquery.event.swipe": "~0.5.4"
-  },
-  "overrides": {
-    "bootstrap-sass": {
-      "main": [
-        "assets/stylesheets/_bootstrap.scss",
-        "assets/fonts/bootstrap/*",
-        "assets/javascripts/bootstrap.js"
-      ]
+    "name": "cooking",
+    "private": true,
+    "dependencies": {
+        "jquery": "~1.11.3",
+        "bootstrap-sass": "~3.3.5",
+        "modernizr": "~2.8.3",
+        "slick-carousel": "~1.5.8",
+        "art-dialog": "~6.0.4",
+        "fancybox": "fancyBox#~2.1.5",
+        "jquery.event.swipe": "~0.5.4"
     },
-    "art-dialog": {
-      "main": [
-        "css/ui-dialog.css",
-        "dist/dialog.js",
-        "dist/dialog-plus.js"
-      ]
-    },
-    "jquery.event.move": {
-      "main": [
-        "js/jquery.event.move.js"
-      ]
-      },
-    "fancybox": {
-      "main": [
-        "source/jquery.fancybox.js",
-        "source/jquery.fancybox.pack.js"
-      ]
+    "overrides": {
+        "bootstrap-sass": {
+            "main": [
+                "assets/stylesheets/_bootstrap.scss",
+                "assets/fonts/bootstrap/*",
+                "assets/javascripts/bootstrap.js"
+            ]
+        },
+        "art-dialog": {
+            "main": [
+                "css/ui-dialog.css",
+                "dist/dialog.js",
+                "dist/dialog-plus.js"
+            ]
+        },
+        "jquery.event.move": {
+            "main": [
+                "js/jquery.event.move.js"
+            ]
+        },
+        "fancybox": {
+            "main": [
+                "source/jquery.fancybox.js",
+                "source/jquery.fancybox.pack.js"
+            ]
+        }
     }
-  }
 }
